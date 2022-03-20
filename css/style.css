@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 120px auto 0;
+  margin: 120px auto;
   max-width: 100%;
 }
 .navbar {
@@ -102,7 +102,6 @@ body {
 .row {
   display: flex;
   justify-content: center;
-  text-align: center;
   margin: 40px 15px;
 }
 
@@ -115,11 +114,10 @@ body {
   line-height: 1.6;
   text-align: left;
   background-color: transparent;
+  /* margin-bottom: 30px; */
 }
 
 .main-link-btn {
-  margin-left: 20px;
-  float: left;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -166,15 +164,13 @@ body {
   .app-content {
     text-align: center;
   }
-  .app-content {
-    padding: 20px 0;
-  }
+
   .home-img {
     display: none;
   }
   .main-link-btn {
     display: block;
-    margin: 20px 30px;
-    float: none;
+    margin: 10px 30px;
+    text-align: center;
   }
 }
