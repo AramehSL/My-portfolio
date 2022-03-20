@@ -12,34 +12,27 @@ body {
   max-width: 100%;
 }
 
-h1,
-h2,
-h3 {
+.home-my-name,
+.home-intro,
+.home-name-description {
   text-align: center;
   margin: 0;
 }
 
-h1 {
-  font-size: 90px;
+.home-my-name,
+.about-me {
+  font-size: 80px;
 }
 
-h2 {
+.home-intro {
   font-size: 48px;
 }
 
-h3 {
+.home-name-description,
+.about-name-description {
   font-size: 24px;
   opacity: 0.6;
   margin-top: 10px;
-}
-
-p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .my-logo {
@@ -144,7 +137,44 @@ p {
   border: 1px solid var(--primary-color);
 }
 
+.about-me,
+.about-name-description,
+.contact-email {
+  text-align: center;
+}
+
 .about-page-paragraph {
   background-color: transparent;
-  margin: 0 85px;
+  margin: 0 55px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .home-my-name,
+  .home-intro,
+  .about-me {
+    font-size: 45px;
+  }
+
+  .home-name-description {
+    margin: 0 30px;
+  }
+
+  .app-title,
+  .app-content {
+    text-align: center;
+  }
+  .app-content {
+    padding: 20px 0;
+  }
+  .home-img {
+    display: none;
+  }
+  .main-link-btn {
+    display: block;
+    margin: 20px 30px;
+    float: none;
+  }
 }
