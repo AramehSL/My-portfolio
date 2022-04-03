@@ -4,12 +4,13 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --text-font: "Poppins", sans-serif;
+  --text-font: "Playfair Display", serif;
 }
 
 body {
   margin: 120px auto 70px;
   max-width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .row {
@@ -22,6 +23,14 @@ body {
 
 .navbar {
   max-width: 100%;
+}
+
+.nav-link {
+  margin-left: 150px;
+}
+
+.nav-link:first-child {
+  margin-left: 0;
 }
 
 .my-logo {
@@ -39,7 +48,7 @@ body {
 
 .home-my-name {
   font-size: 80px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
   font-weight: 800;
 }
 
@@ -51,7 +60,6 @@ body {
   font-size: 20px;
   opacity: 0.6;
   margin-top: 10px;
-  font-family: var(--text-font);
 }
 
 .home-img {
@@ -114,14 +122,13 @@ body {
 
 .homepage-app-title {
   font-size: 38px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
 }
 .homepage-app-content {
   font-size: 18px;
   line-height: 1.6;
   background-color: transparent;
   margin-bottom: 40px;
-  font-family: var(--text-font);
   font-weight: 500;
 }
 
@@ -149,14 +156,13 @@ body {
 
 .about-content {
   font-size: 14px;
-  margin: 190px 0;
-  font-family: var(--text-font);
+  margin: 140px 0;
 }
 
 .about-content h1 {
   font-size: 50px;
   margin-top: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
 }
 
 .about-name-description {
@@ -166,13 +172,13 @@ body {
 
 .about-page-paragraph {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   padding: 20px 20px 0 0;
   line-height: 1.6;
 }
 
 .about-img {
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 /* ---------------------- Project Page ----------------------- */
@@ -181,7 +187,7 @@ body {
   text-align: center;
   font-size: 46px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
   margin: 140px 0 90px;
 }
 
@@ -194,13 +200,12 @@ body {
 }
 
 .project-section h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
   font-weight: 700;
 }
 
 .project-section p {
   font-size: 20px;
-  font-family: var(--text-font);
 }
 
 .project-image {
@@ -208,27 +213,56 @@ body {
   border-radius: 10px;
 }
 
+/* ---------------------- Contact ----------------------- */
+
+.contact-page-title {
+  text-align: center;
+
+  font-size: 56px;
+  font-weight: 700;
+  font-family: var(--text-font);
+  margin: 160px 80px 90px;
+}
+
+.contact-page-content {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.contact-page-email {
+  margin: 40px;
+}
+
+.contact-page-email a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contact-page-phone p {
+  color: var(--primary-color);
+}
+
 /* ---------------------- Footer ----------------------- */
 
 .footer-section-homepage,
-.footer-section-projects {
-  margin-top: 180px;
+.footer-section-projects,
+.footer-section-contact {
+  margin-top: 190px;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   padding: 65px 85px;
   background-color: var(--secondary-color);
 }
 
 .footer h2 {
   font-size: 38px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--text-font);
   line-height: 2;
   font-weight: 700;
-}
-
-.footer p {
-  font-family: var(--text-font);
 }
 
 .social-links {
@@ -265,28 +299,113 @@ body {
   background-color: var(--primary-color);
 }
 
-@media (max-width: 576px) {
-  .home-my-name,
-  .home-intro,
-  .about-me {
-    font-size: 45px;
+/* ---------------------- Media Query  ----------------------- */
+
+@media (max-width: 992px) {
+  .nav-link {
+    text-align: center;
+    margin-left: 0px;
   }
 
-  .home-name-description {
+  .homepage-app-title,
+  .homepage-app-content,
+  .about-content {
+    text-align: center;
+  }
+
+  .home-img {
+    margin: 30px 0;
+  }
+  .row-homepage {
+    background-color: #6b63ff1f;
+    border-radius: 15px;
+    padding: 30px 40px;
+  }
+
+  .about-content {
+    margin-top: 100px;
+  }
+
+  .about-content h1 {
+    font-size: 42px;
+  }
+
+  .main-link-btn {
+    display: block;
+    padding: 15px;
+    margin: 10px 40px;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .home-intro {
+    font-size: 30px;
+  }
+
+  .home-my-name,
+  .project-page-title,
+  .contact-page-title {
+    font-size: 40px;
+  }
+
+  .home-name-description,
+  .contact-page-content {
+    font-size: 16px;
     margin: 0 30px;
   }
 
-  .app-title,
-  .app-content {
+  .homepage-app-title,
+  .homepage-app-content,
+  .about-content {
+    line-height: 1.6;
     text-align: center;
+  }
+
+  .row-homepage {
+    background-color: #6b63ff20;
+    border-radius: 15px;
+    padding: 30px 0;
   }
 
   .home-img {
     display: none;
   }
+
+  .about-content {
+    margin-top: 100px;
+  }
+
+  .about-content h1 {
+    font-size: 38px;
+  }
+
   .main-link-btn {
     display: block;
+    padding: 15px;
     margin: 10px 30px;
     text-align: center;
+  }
+  .footer {
+    text-align: center;
+    display: block;
+  }
+
+  .footer .main-link-btn {
+    margin: 10px 0;
+  }
+  .footer-contact-content h2 {
+    font-size: 32px;
+    line-height: 1.6;
   }
 }

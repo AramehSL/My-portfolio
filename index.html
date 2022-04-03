@@ -28,12 +28,12 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active ms-3" aria-current="page" href="index.html" title="Homepage">Home</a>
-          <a class="nav-link ms-3" href="about.html" title="About me">About</a>
-          <a class="nav-link ms-3" href="/projects.html" title="My Projects">Projects</a>
-          <a class="nav-link ms-3" href="/contact.html" title="Contact me">Contact</a>
+          <a class="nav-link active" aria-current="page" href="index.html" title="Homepage">Home</a>
+          <a class="nav-link" href="/about.html" title="About me">About</a>
+          <a class="nav-link" href="/projects.html" title="My Projects">Projects</a>
+          <a class="nav-link" href="/contact.html" title="Contact me">Contact</a>
         </div>
       </div>
     </div>
@@ -43,49 +43,52 @@
     <h1 class="home-my-name">Arameh Soltani</h1>
     <h3 class="home-name-description">🇨🇦 Front-end developer, based in Montreal, Canada</h3>
     <div class="navigation-links">
-      <a href="about.html#contact" class="contact-link" title="Contact me">Contact me</a>
+      <a href="/contact.html" class="contact-link" title="Contact me">Contact me</a>
       <a href="about.html" class="about-link" title="About me">About me</a>
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <img src="/images/pexels-photo-3758056.png" alt="woman doing yoga" class="img-fluid rounded p-2 home-img" />
+    <div class="row row-homepage">
+      <div class="col-md-6">
+        <img src="/images/dictionary.png" alt="Weather app photo" class="img-fluid rounded m-1 p-2 home-img" />
       </div>
-      <div class="col-sm-6">
-        <h2 class="homepage-app-title">Yoga App</h2>
+      <div class="col-md-6">
+        <h2 class="homepage-app-title">Dictionary App</h2>
         <p class="homepage-app-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-          eos eveniet alias temporibus deserunt veritatis minima fugiat
-          explicabo eum dolore.
+          A dictionary app built with React. Integrating two APIs, the dictionary shows definitions, synonyms,
+          information on
+          pronunciation and pictures related to the search.
+
         </p>
-        <a href="https://www.pexels.com/photo/photo-of-woman-standing-with-one-leg-3758056/" class="main-link-btn"
-          target="_blank" title="Yoga App">launch yoga app</a>
+        <a href="https://madame-meteo.netlify.app/" target="_blank" class="main-link-btn" title="Weather App">Coming
+          Soon</a>
       </div>
+
     </div>
 
-    <div class="row">
-      <div class="col-sm-6">
+
+    <div class="row row-homepage">
+      <div class="col-md-6">
         <h2 class="homepage-app-title">Weather App</h2>
         <p class="homepage-app-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-          eos eveniet alias temporibus deserunt veritatis minima fugiat
-          explicabo eum dolore.
+          A weather app first built with HTML, CSS, Javascript and later rebuilt in React. Pulling live weather data
+          from an API
+          you can look up both the weather for your current location or search for any other city.
+
         </p>
         <a href="https://madame-meteo.netlify.app/" target="_blank" class="main-link-btn" title="Weather App">launch
           weather app</a>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <img src="/images/weatherapp.png" alt="Weather app photo" class="img-fluid rounded m-1 p-2 home-img" />
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6">
+
+    <div class="row row-homepage">
+      <div class="col-md-6">
         <img src="/images/photography.png" alt="photography page" class="img-fluid rounded m-1 p-2 home-img" />
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <h2 class="homepage-app-title">Photography Page</h2>
         <p class="homepage-app-content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
@@ -98,10 +101,28 @@
       </div>
     </div>
 
+    <div class="row row-homepage">
+      <div class="col-md-6">
+        <h2 class="homepage-app-title">Yoga App</h2>
+        <p class="homepage-app-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+          eos eveniet alias temporibus deserunt veritatis minima fugiat
+          explicabo eum dolore.
+        </p>
+        <a href="https://www.pexels.com/photo/photo-of-woman-standing-with-one-leg-3758056/" class="main-link-btn"
+          target="_blank" title="Yoga App">launch yoga app</a>
+      </div>
+      <div class="col-md-6">
+        <img src="/images/pexels-photo-3758056.png" alt="woman doing yoga" class="img-fluid rounded p-2 home-img" />
+      </div>
+    </div>
+
+
   </div>
 
   <div class="container footer-section-homepage">
-    <footer class="footer d-flex justify-content-between rounded shadow-sm">
+    <footer class="footer rounded shadow-sm">
       <div class="footer-contact-content">
         <h2>Work Inquiry</h2>
         <p>Let’s work together and i’ll help you by all my best</p>
@@ -121,8 +142,8 @@
         <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
 
       </div>
-
     </div>
+  </div>
 
   </div>
 </body>
