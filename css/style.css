@@ -1,15 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400&display=swap");
+
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --text-font: "Poppins", sans-serif;
 }
 
 body {
-  margin: 120px auto;
+  margin: 120px auto 70px;
   max-width: 100%;
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 40px 15px;
+}
+
+/* ---------------------- Navbar ----------------------- */
+
 .navbar {
   max-width: 100%;
+}
+
+.my-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
 }
 
 .home-my-name,
@@ -19,26 +37,21 @@ body {
   margin: 0;
 }
 
-.home-my-name,
-.about-me {
+.home-my-name {
   font-size: 80px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
 }
 
 .home-intro {
-  font-size: 48px;
+  font-size: 36px;
 }
 
-.home-name-description,
-.about-name-description {
-  font-size: 24px;
+.home-name-description {
+  font-size: 20px;
   opacity: 0.6;
   margin-top: 10px;
-}
-
-.my-logo {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
+  font-family: var(--text-font);
 }
 
 .home-img {
@@ -54,7 +67,7 @@ body {
 .navigation-links a {
   margin: 20px;
   border-radius: 4px;
-  padding: 15px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -99,27 +112,24 @@ body {
   text-decoration: underline;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  margin: 40px 15px;
-}
-
-.app-title {
+.homepage-app-title {
   font-size: 38px;
-  text-align: left;
+  font-family: "Playfair Display", serif;
 }
-.app-content {
+.homepage-app-content {
   font-size: 18px;
   line-height: 1.6;
-  text-align: left;
   background-color: transparent;
-  /* margin-bottom: 30px; */
+  margin-bottom: 40px;
+  font-family: var(--text-font);
+  font-weight: 500;
 }
+
+/* ---------------------- Button css ----------------------- */
 
 .main-link-btn {
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 20px 25px;
   text-decoration: none;
   text-transform: capitalize;
   border: none;
@@ -135,18 +145,124 @@ body {
   border: 1px solid var(--primary-color);
 }
 
-.about-me,
-.about-name-description,
-.contact-email {
-  text-align: center;
+/* ---------------------- About Page ----------------------- */
+
+.about-content {
+  font-size: 14px;
+  margin: 190px 0;
+  font-family: var(--text-font);
+}
+
+.about-content h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.about-name-description {
+  font-size: 18px;
+  color: #000;
 }
 
 .about-page-paragraph {
-  background-color: transparent;
-  margin: 0 55px;
-  text-align: center;
-  line-height: 1.5;
   font-size: 18px;
+  margin-bottom: 40px;
+  padding: 20px 20px 0 0;
+  line-height: 1.6;
+}
+
+.about-img {
+  margin-top: 140px;
+}
+
+/* ---------------------- Project Page ----------------------- */
+
+.project-page-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin: 140px 0 90px;
+}
+
+.project-section {
+  background-color: var(--secondary-color);
+  padding: 55px 40px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.project-section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.project-section p {
+  font-size: 20px;
+  font-family: var(--text-font);
+}
+
+.project-image {
+  margin: 30px 0 45px;
+  border-radius: 10px;
+}
+
+/* ---------------------- Footer ----------------------- */
+
+.footer-section-homepage,
+.footer-section-projects {
+  margin-top: 180px;
+}
+
+.footer {
+  padding: 65px 85px;
+  background-color: var(--secondary-color);
+}
+
+.footer h2 {
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.footer p {
+  font-family: var(--text-font);
+}
+
+.social-links {
+  margin-top: 60px;
+}
+
+.social-link-email {
+  margin-bottom: 36px;
+}
+
+.social-link-email a {
+  color: #000;
+  font-size: 22px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.social-link-email a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.social-media-links a {
+  color: var(--primary-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.social-media-links a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 576px) {
