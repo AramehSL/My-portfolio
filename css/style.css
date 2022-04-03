@@ -287,8 +287,8 @@ body {
 
 .social-media-links a {
   color: var(--primary-color);
-  margin: 10px;
-  padding: 10px;
+  margin: 0 10px;
+  padding: 8px 12px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   transition: all 200ms ease-in-out;
