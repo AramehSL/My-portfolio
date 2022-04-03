@@ -291,12 +291,26 @@ body {
   padding: 8px 12px;
   border-radius: 50%;
   background-color: var(--secondary-color);
+  cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 
 .social-media-links a:hover {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+
+.social-links p {
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.social-links p a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* ---------------------- Media Query  ----------------------- */
